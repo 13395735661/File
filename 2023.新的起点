@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>2023,新的起点</title>
+    <style>
+        body{
+          
+          background-color:black
+          color:white;
+          font-size:30px
+        }
+      p::after{
+        content:"🏮"
+    </style>
+  </head>
+  <body>
+    <audio src="Music.flac" autoplay loop></audio>
+    <img src="Image.gif","Image2.gif"></img>
+    <p id="p"></p>
+    <script>
+        let str = "\n\n\n各位旅客 您乘坐的2022次列车 即将到站 请您准备好自己的行李物品 准备转乘2023次列车 本次列车禁止携带 消极 抑郁 烦恼 等危险物品上车 请您带好自己的 吉祥 微笑 纯真 等候上车 途径站是 事业成功站 幸福甜蜜站 平安喜乐站 终点站是 心想事成站 下车的旅客 请到前门等候下车 祝您旅途愉快。"
+        let i =  0
+        let timer = setInterval(()=>{
+          p.innerText += str[i]
+          i++
+          if(i == str.length-1){
+            ClearInterval(timer)
+            }
+          },200)
+    </script>
+
+  </body>
+<html>
